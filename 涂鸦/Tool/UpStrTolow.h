@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UpStrTolow : NSObject
+typedef enum{
+    IWComposeToolbarButtonTypePicture,
+    IWComposeToolbarButtonTypeMention,
+    IWComposeToolbarButtonTypeTrend,
+    IWComposeToolbarButtonTypeEmotion
+} MWDigitalType;
 
+@interface UpStrTolow : NSObject
++(NSArray *)upStrToLowWith:(NSArray *)array;
 @end

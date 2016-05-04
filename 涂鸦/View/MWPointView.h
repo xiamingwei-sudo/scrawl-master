@@ -10,4 +10,6 @@
 
 @interface MWPointView : UIView
 
+- (void)back;
+- (void)clear;
 @end

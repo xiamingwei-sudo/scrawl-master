@@ -8,14 +8,90 @@
 
 #import "MWPointView.h"
 
-@implementation MWPointView
+@interface MWPointView()
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+@property (nonatomic , strong)NSMutableArray *points;
+@end
+
+@implementation MWPointView
+- (NSMutableArray *)points
+{
+    if (_points == nil) {
+        _points = [NSMutableArray array];
+    }
+    return _points;
 }
-*/
+
+- (void)clear
+{
+    [self.points removeAllObjects];
+    [self setNeedsDisplay];
+}
+
+- (void)back
+{
+    [self.points removeLastObject];
+    [self setNeedsDisplay];
+}
+
+/**
+ *  确定起点
+ */
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint startPos = [touch locationInView:touch.view];
+    
+    //添加路径
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    
+    /**
+     *  设置路径的起始点为圆点
+     */
+    path.lineCapStyle = kCGLineCapRound;
+    
+    /**
+     *  设置路径的结束点为圆点
+     */
+    path.lineJoinStyle = kCGLineJoinRound;
+    
+    /**
+     *  路径的起始点用 moveToPoint：
+     */
+    [path moveToPoint:startPos];
+    [self.points addObject:path];
+    
+    [self setNeedsDisplay];
+}
+/**
+ *  连线
+ */
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint currentPos = [touch locationInView:touch.view];
+    
+   UIBezierPath *currentPath = self.points.lastObject;
+    [currentPath addLineToPoint:currentPos];
+    /**
+     *  刷新帧
+     */
+    [self setNeedsDisplay];
+}
+/**
+ *  连线
+ */
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self touchesMoved:touches withEvent:event];
+}
+
+-(void)drawRect:(CGRect)rect
+{
+    for (UIBezierPath *path in self.points) {
+        path.lineWidth = 3.0f;
+        [path stroke];
+    }
+}
 
 @end

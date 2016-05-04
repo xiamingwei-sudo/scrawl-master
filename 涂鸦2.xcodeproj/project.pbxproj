@@ -14,6 +14,9 @@
 		209871011C55F6B300A1EB65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209871001C55F6B300A1EB65 /* Images.xcassets */; };
 		209871041C55F6B300A1EB65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209871021C55F6B300A1EB65 /* LaunchScreen.xib */; };
 		209871101C55F6B300A1EB65 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098710F1C55F6B300A1EB65 /* __Tests.m */; };
+		2098711C1C55F7BE00A1EB65 /* MWPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098711B1C55F7BE00A1EB65 /* MWPointView.m */; };
+		209871221C5604D900A1EB65 /* UIImage+MW.m in Sources */ = {isa = PBXBuildFile; fileRef = 209871211C5604D900A1EB65 /* UIImage+MW.m */; };
+		209871261C5628CF00A1EB65 /* UpStrTolow.m in Sources */ = {isa = PBXBuildFile; fileRef = 209871251C5628CF00A1EB65 /* UpStrTolow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		209870F01C55F6B300A1EB65 /* 涂鸦.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "涂鸦.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		201AC1771C8FCA9C00AC77A1 /* Comment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		201AC1781C8FCACA00AC77A1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		209870F01C55F6B300A1EB65 /* 涂鸦2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "涂鸦2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		209870F41C55F6B300A1EB65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		209870F51C55F6B300A1EB65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		209870F71C55F6B300A1EB65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,9 +42,15 @@
 		209870FE1C55F6B300A1EB65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		209871001C55F6B300A1EB65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		209871031C55F6B300A1EB65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		209871091C55F6B300A1EB65 /* 涂鸦Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "涂鸦Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		209871091C55F6B300A1EB65 /* 涂鸦2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "涂鸦2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2098710E1C55F6B300A1EB65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2098710F1C55F6B300A1EB65 /* __Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __Tests.m; sourceTree = "<group>"; };
+		2098711A1C55F7BE00A1EB65 /* MWPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWPointView.h; sourceTree = "<group>"; };
+		2098711B1C55F7BE00A1EB65 /* MWPointView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWPointView.m; sourceTree = "<group>"; };
+		209871201C5604D900A1EB65 /* UIImage+MW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MW.h"; sourceTree = "<group>"; };
+		209871211C5604D900A1EB65 /* UIImage+MW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MW.m"; sourceTree = "<group>"; };
+		209871241C5628CF00A1EB65 /* UpStrTolow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpStrTolow.h; sourceTree = "<group>"; };
+		209871251C5628CF00A1EB65 /* UpStrTolow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpStrTolow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +83,8 @@
 		209870F11C55F6B300A1EB65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				209870F01C55F6B300A1EB65 /* 涂鸦.app */,
-				209871091C55F6B300A1EB65 /* 涂鸦Tests.xctest */,
+				209870F01C55F6B300A1EB65 /* 涂鸦2.app */,
+				209871091C55F6B300A1EB65 /* 涂鸦2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +92,8 @@
 		209870F21C55F6B300A1EB65 /* 涂鸦 */ = {
 			isa = PBXGroup;
 			children = (
+				209871231C56285600A1EB65 /* Tool */,
+				209871191C55F78D00A1EB65 /* View */,
 				209870F71C55F6B300A1EB65 /* AppDelegate.h */,
 				209870F81C55F6B300A1EB65 /* AppDelegate.m */,
 				209870FA1C55F6B300A1EB65 /* ViewController.h */,
@@ -119,12 +132,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		209871191C55F78D00A1EB65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2098711A1C55F7BE00A1EB65 /* MWPointView.h */,
+				2098711B1C55F7BE00A1EB65 /* MWPointView.m */,
+				209871201C5604D900A1EB65 /* UIImage+MW.h */,
+				209871211C5604D900A1EB65 /* UIImage+MW.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		209871231C56285600A1EB65 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				209871241C5628CF00A1EB65 /* UpStrTolow.h */,
+				209871251C5628CF00A1EB65 /* UpStrTolow.m */,
+				201AC1771C8FCA9C00AC77A1 /* Comment.h */,
+				201AC1781C8FCACA00AC77A1 /* PrefixHeader.pch */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		209870EF1C55F6B300A1EB65 /* 涂鸦 */ = {
+		209870EF1C55F6B300A1EB65 /* 涂鸦2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 209871131C55F6B300A1EB65 /* Build configuration list for PBXNativeTarget "涂鸦" */;
+			buildConfigurationList = 209871131C55F6B300A1EB65 /* Build configuration list for PBXNativeTarget "涂鸦2" */;
 			buildPhases = (
 				209870EC1C55F6B300A1EB65 /* Sources */,
 				209870ED1C55F6B300A1EB65 /* Frameworks */,
@@ -134,14 +169,14 @@
 			);
 			dependencies = (
 			);
-			name = "涂鸦";
+			name = "涂鸦2";
 			productName = "涂鸦";
-			productReference = 209870F01C55F6B300A1EB65 /* 涂鸦.app */;
+			productReference = 209870F01C55F6B300A1EB65 /* 涂鸦2.app */;
 			productType = "com.apple.product-type.application";
 		};
-		209871081C55F6B300A1EB65 /* 涂鸦Tests */ = {
+		209871081C55F6B300A1EB65 /* 涂鸦2Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 209871161C55F6B300A1EB65 /* Build configuration list for PBXNativeTarget "涂鸦Tests" */;
+			buildConfigurationList = 209871161C55F6B300A1EB65 /* Build configuration list for PBXNativeTarget "涂鸦2Tests" */;
 			buildPhases = (
 				209871051C55F6B300A1EB65 /* Sources */,
 				209871061C55F6B300A1EB65 /* Frameworks */,
@@ -152,9 +187,9 @@
 			dependencies = (
 				2098710B1C55F6B300A1EB65 /* PBXTargetDependency */,
 			);
-			name = "涂鸦Tests";
+			name = "涂鸦2Tests";
 			productName = "涂鸦Tests";
-			productReference = 209871091C55F6B300A1EB65 /* 涂鸦Tests.xctest */;
+			productReference = 209871091C55F6B300A1EB65 /* 涂鸦2Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 209870EB1C55F6B300A1EB65 /* Build configuration list for PBXProject "涂鸦" */;
+			buildConfigurationList = 209870EB1C55F6B300A1EB65 /* Build configuration list for PBXProject "涂鸦2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,8 +223,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				209870EF1C55F6B300A1EB65 /* 涂鸦 */,
-				209871081C55F6B300A1EB65 /* 涂鸦Tests */,
+				209870EF1C55F6B300A1EB65 /* 涂鸦2 */,
+				209871081C55F6B300A1EB65 /* 涂鸦2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,8 +255,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				209870FC1C55F6B300A1EB65 /* ViewController.m in Sources */,
+				2098711C1C55F7BE00A1EB65 /* MWPointView.m in Sources */,
+				209871261C5628CF00A1EB65 /* UpStrTolow.m in Sources */,
 				209870F91C55F6B300A1EB65 /* AppDelegate.m in Sources */,
 				209870F61C55F6B300A1EB65 /* main.m in Sources */,
+				209871221C5604D900A1EB65 /* UIImage+MW.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +276,7 @@
 /* Begin PBXTargetDependency section */
 		2098710B1C55F6B300A1EB65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 209870EF1C55F6B300A1EB65 /* 涂鸦 */;
+			target = 209870EF1C55F6B300A1EB65 /* 涂鸦2 */;
 			targetProxy = 2098710A1C55F6B300A1EB65 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -347,9 +385,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/涂鸦/Tool/PrefixHeader.pch";
 				INFOPLIST_FILE = "涂鸦/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "涂鸦2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -357,9 +398,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/涂鸦/Tool/PrefixHeader.pch";
 				INFOPLIST_FILE = "涂鸦/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "涂鸦2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -377,7 +421,7 @@
 				);
 				INFOPLIST_FILE = "涂鸦Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "涂鸦2Tests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/涂鸦.app/涂鸦";
 			};
 			name = Debug;
@@ -392,7 +436,7 @@
 				);
 				INFOPLIST_FILE = "涂鸦Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "涂鸦2Tests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/涂鸦.app/涂鸦";
 			};
 			name = Release;
@@ -400,7 +444,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		209870EB1C55F6B300A1EB65 /* Build configuration list for PBXProject "涂鸦" */ = {
+		209870EB1C55F6B300A1EB65 /* Build configuration list for PBXProject "涂鸦2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				209871111C55F6B300A1EB65 /* Debug */,
@@ -409,21 +453,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		209871131C55F6B300A1EB65 /* Build configuration list for PBXNativeTarget "涂鸦" */ = {
+		209871131C55F6B300A1EB65 /* Build configuration list for PBXNativeTarget "涂鸦2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				209871141C55F6B300A1EB65 /* Debug */,
 				209871151C55F6B300A1EB65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		209871161C55F6B300A1EB65 /* Build configuration list for PBXNativeTarget "涂鸦Tests" */ = {
+		209871161C55F6B300A1EB65 /* Build configuration list for PBXNativeTarget "涂鸦2Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				209871171C55F6B300A1EB65 /* Debug */,
 				209871181C55F6B300A1EB65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
